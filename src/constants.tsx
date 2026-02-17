@@ -58,4 +58,4 @@ export const IMAGES = {
     { id: 3, url: '/interior/espaco-03.webp', alt: 'Detalhes Bambu' },
     { id: 4, url: '/interior/espaco-04.webp', alt: 'Ambiente Zen' },
   ]
-};
+}; 
