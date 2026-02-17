@@ -1,10 +1,12 @@
 // 1. Importação das Unhas (Pasta 'cortes')
+// Os nomes batem com o seu print: unhas-01.webp
 import unhas01 from './assets/images/cortes/unhas-01.webp';
 import unhas02 from './assets/images/cortes/unhas-02.webp';
 import unhas03 from './assets/images/cortes/unhas-03.webp';
 import unhas04 from './assets/images/cortes/unhas-04.webp';
 
 // 2. Importação do Interior (Pasta 'interior')
+// Os nomes batem com o seu print: espaco-01.webp
 import espaco01 from './assets/images/interior/espaco-01.webp';
 import espaco02 from './assets/images/interior/espaco-02.webp';
 import espaco03 from './assets/images/interior/espaco-03.webp';
@@ -55,7 +57,7 @@ export const REVIEWS = [
 ];
 
 export const IMAGES = {
-  cortes: [ // Mantido a chave "cortes" para não quebrar o App.tsx
+  cortes: [
     { id: 1, url: unhas01, alt: 'Unhas FB HUB' },
     { id: 2, url: unhas02, alt: 'Extensão de Pestanas' },
     { id: 3, url: unhas03, alt: 'Nail Art' },
