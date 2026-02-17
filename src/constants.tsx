@@ -1,16 +1,4 @@
-// 1. Importação das Unhas (Pasta 'cortes')
-// Os nomes batem com o seu print: unhas-01.webp
-import unhas01 from './assets/images/cortes/unhas-01.webp';
-import unhas02 from './assets/images/cortes/unhas-02.webp';
-import unhas03 from './assets/images/cortes/unhas-03.webp';
-import unhas04 from './assets/images/cortes/unhas-04.webp';
-
-// 2. Importação do Interior (Pasta 'interior')
-// Os nomes batem com o seu print: espaco-01.webp
-import espaco01 from './assets/images/interior/espaco-01.webp';
-import espaco02 from './assets/images/interior/espaco-02.webp';
-import espaco03 from './assets/images/interior/espaco-03.webp';
-import espaco04 from './assets/images/interior/espaco-04.webp';
+// Não precisamos mais de imports no topo!
 
 export const BUSINESS_INFO = {
   name: "FB HUB",
@@ -56,17 +44,18 @@ export const REVIEWS = [
   }
 ];
 
+// Caminhos diretos (apontam para a pasta public)
 export const IMAGES = {
   cortes: [
-    { id: 1, url: unhas01, alt: 'Unhas FB HUB' },
-    { id: 2, url: unhas02, alt: 'Extensão de Pestanas' },
-    { id: 3, url: unhas03, alt: 'Nail Art' },
-    { id: 4, url: unhas04, alt: 'Manicure Premium' },
+    { id: 1, url: '/cortes/unhas-01.webp', alt: 'Unhas FB HUB' },
+    { id: 2, url: '/cortes/unhas-02.webp', alt: 'Extensão de Pestanas' },
+    { id: 3, url: '/cortes/unhas-03.webp', alt: 'Nail Art' },
+    { id: 4, url: '/cortes/unhas-04.webp', alt: 'Manicure Premium' },
   ],
   interior: [
-    { id: 1, url: espaco01, alt: 'Recepção FB HUB' },
-    { id: 2, url: espaco02, alt: 'Espaço de Atendimento' },
-    { id: 3, url: espaco03, alt: 'Detalhes Bambu' },
-    { id: 4, url: espaco04, alt: 'Ambiente Zen' },
+    { id: 1, url: '/interior/espaco-01.webp', alt: 'Recepção FB HUB' },
+    { id: 2, url: '/interior/espaco-02.webp', alt: 'Espaço de Atendimento' },
+    { id: 3, url: '/interior/espaco-03.webp', alt: 'Detalhes Bambu' },
+    { id: 4, url: '/interior/espaco-04.webp', alt: 'Ambiente Zen' },
   ]
 };
