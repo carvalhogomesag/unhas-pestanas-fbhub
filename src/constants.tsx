@@ -1,8 +1,10 @@
+// 1. Importação das Unhas (Pasta 'cortes')
 import unhas01 from './assets/images/cortes/unhas-01.webp';
 import unhas02 from './assets/images/cortes/unhas-02.webp';
 import unhas03 from './assets/images/cortes/unhas-03.webp';
 import unhas04 from './assets/images/cortes/unhas-04.webp';
 
+// 2. Importação do Interior (Pasta 'interior')
 import espaco01 from './assets/images/interior/espaco-01.webp';
 import espaco02 from './assets/images/interior/espaco-02.webp';
 import espaco03 from './assets/images/interior/espaco-03.webp';
@@ -18,7 +20,7 @@ export const BUSINESS_INFO = {
   openingHours: 'Segunda a Sábado: 09:00 - 19:00',
   bookingUrl: 'https://wa.me/351912413847', 
   googleMapsUrl: 'https://maps.app.goo.gl/h5kqFvuqEUGLKe9G6',
-  instagramUrl: 'https://instagram.com/rosicangueiro' // Ajuste se for diferente
+  instagramUrl: 'https://instagram.com/rosicangueiro'
 };
 
 export const SERVICES = [
@@ -33,36 +35,36 @@ export const REVIEWS = [
     id: 1,
     author: 'Michelle Benfica',
     date: 'Há 8 meses',
-    text: 'Percebi que não estava apenas a cuidar das unhas e pestanas, mas também da alma. Aqui fui acolhida - encontrei amigas.',
+    text: 'Percebi que não estava apenas a cuidar das unhas e pestanas, mas também da alma. Aqui fui acolhida.',
     avatar: 'https://ui-avatars.com/api/?name=Michelle+Benfica&background=a7f3d0&color=065f46'
   },
   {
     id: 2,
     author: 'Filipa Ferreira',
     date: 'Há 3 meses',
-    text: 'Sinto-me em casa. Profissionais altamente qualificadas, com um rigor e higiene excepcionais! As melhores!',
+    text: 'Sinto-me em casa. Profissionais altamente qualificadas, com um rigor e higiene excepcionais!',
     avatar: 'https://ui-avatars.com/api/?name=Filipa+Ferreira&background=a7f3d0&color=065f46'
   },
   {
     id: 3,
     author: 'Constança Sequeira',
     date: 'Há 5 meses',
-    text: 'Uma qualidade que vem de trás... e agora um espaço novo. Sempre a crescer e a evoluir. Parabéns!',
+    text: 'Uma qualidade que vem de trás... e agora um espaço novo. Sempre a crescer e a evoluir.',
     avatar: 'https://ui-avatars.com/api/?name=Constanca+Nunes&background=a7f3d0&color=065f46'
   }
 ];
 
 export const IMAGES = {
-  cortes: [ // Mantendo a chave "cortes" para não quebrar o código, mas referindo a unhas
-    { id: 1, url: unhas01, alt: 'Unhas Acrílicas FB HUB' },
+  cortes: [ // Mantido a chave "cortes" para não quebrar o App.tsx
+    { id: 1, url: unhas01, alt: 'Unhas FB HUB' },
     { id: 2, url: unhas02, alt: 'Extensão de Pestanas' },
-    { id: 3, url: unhas03, alt: 'Nail Art Exclusiva' },
+    { id: 3, url: unhas03, alt: 'Nail Art' },
     { id: 4, url: unhas04, alt: 'Manicure Premium' },
   ],
   interior: [
     { id: 1, url: espaco01, alt: 'Recepção FB HUB' },
     { id: 2, url: espaco02, alt: 'Espaço de Atendimento' },
-    { id: 3, url: espaco03, alt: 'Detalhes Bambu e Luz' },
+    { id: 3, url: espaco03, alt: 'Detalhes Bambu' },
     { id: 4, url: espaco04, alt: 'Ambiente Zen' },
   ]
 };
