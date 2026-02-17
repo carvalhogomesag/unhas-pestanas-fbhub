@@ -12,14 +12,12 @@ const MAP_SOURCE = mapaImg;
 
 const App: React.FC = () => {
   return (
-    // TEMA: Verde Água (Emerald) e Bege
     <div className="min-h-screen flex flex-col selection:bg-emerald-200 selection:text-emerald-900">
       <Navbar />
 
-      {/* HERO SECTION */}
+      {/* HERO SECTION (Usa espaco-01) */}
       <section id="inicio" className="relative min-h-[90vh] md:min-h-[95vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          {/* AUMENTEI A OPACIDADE PARA 80% PARA A FOTO APARECER BEM */}
           <img src={IMAGES.interior[0].url} alt="FB HUB Rosi Cangueiro" className="w-full h-full object-cover opacity-80 scale-105" />
           <div className="absolute inset-0 bg-gradient-to-b from-stone-50/40 via-stone-100/60 to-stone-100"></div> 
         </div>
@@ -51,7 +49,7 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* DESTAQUES (Clean) */}
+      {/* DESTAQUES */}
       <section className="py-16 md:py-24 bg-white relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -93,7 +91,7 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* SOBRE (Foco na Equipa) */}
+      {/* SOBRE (Usa espaco-02) */}
       <section id="sobre" className="py-20 md:py-32 bg-white overflow-hidden text-left">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
@@ -123,7 +121,7 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* GALERIA - ESTA SEÇÃO ESTAVA FALTANDO */}
+      {/* GALERIA DE TRABALHOS (Usa as Unhas) */}
       <section className="py-20 md:py-24 bg-stone-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -150,33 +148,59 @@ const App: React.FC = () => {
         </div>
       </section>
 
+      {/* NOVA SEÇÃO: DETALHES DO ESPAÇO (Usa espaco-03 e espaco-04) */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+             <div className="order-2 md:order-1 space-y-6">
+                <h3 className="font-serif text-3xl md:text-4xl text-stone-900">Um Refúgio de Paz</h3>
+                <p className="text-stone-600 leading-relaxed">
+                  Cada detalhe do FB HUB foi pensado para transmitir calma. Das luzes quentes aos tons de bambu, o ambiente convida ao relaxamento total enquanto cuidamos de si.
+                </p>
+                <div className="flex gap-4">
+                   <div className="rounded-2xl overflow-hidden h-40 flex-1">
+                      <img src={IMAGES.interior[2].url} alt="Detalhes FB HUB" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
+                   </div>
+                   <div className="rounded-2xl overflow-hidden h-40 flex-1">
+                      <img src={IMAGES.interior[3].url} alt="Ambiente Zen" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
+                   </div>
+                </div>
+             </div>
+             <div className="order-1 md:order-2 h-80 md:h-auto rounded-[3rem] overflow-hidden shadow-xl">
+                {/* Repetindo a foto 1 ou outra se quiser, ou um vídeo futuramente */}
+                <img src={IMAGES.interior[0].url} alt="FB HUB Interior" className="w-full h-full object-cover" />
+             </div>
+          </div>
+        </div>
+      </section>
+
       {/* CONTACTO */}
-      <section id="contacto" className="py-20 bg-white text-left">
+      <section id="contacto" className="py-20 bg-stone-50 text-left">
         <div className="container mx-auto px-4 grid lg:grid-cols-12 gap-16">
           <div className="lg:col-span-5">
             <h2 className="font-serif text-5xl font-bold mb-10 text-stone-900">Visite-nos</h2>
             <div className="space-y-10">
               <div className="flex gap-6">
-                <div className="w-14 h-14 bg-stone-50 shadow-sm rounded-2xl flex items-center justify-center text-emerald-600">
+                <div className="w-14 h-14 bg-white shadow-sm rounded-2xl flex items-center justify-center text-emerald-600">
                    <MapPin size={28} />
                 </div>
                 <div><h4 className="text-stone-900 font-bold text-lg">Morada</h4><p className="text-stone-500">{BUSINESS_INFO.address}, {BUSINESS_INFO.city}</p></div>
               </div>
               <div className="flex gap-6">
-                <div className="w-14 h-14 bg-stone-50 shadow-sm rounded-2xl flex items-center justify-center text-emerald-600">
+                <div className="w-14 h-14 bg-white shadow-sm rounded-2xl flex items-center justify-center text-emerald-600">
                    <Clock size={28} />
                 </div>
                 <div><h4 className="text-stone-900 font-bold text-lg">Horário</h4><p className="text-stone-500">{BUSINESS_INFO.openingHours}</p></div>
               </div>
               <div className="flex gap-6">
-                <div className="w-14 h-14 bg-stone-50 shadow-sm rounded-2xl flex items-center justify-center text-emerald-600">
+                <div className="w-14 h-14 bg-white shadow-sm rounded-2xl flex items-center justify-center text-emerald-600">
                    <Phone size={28} />
                 </div>
                 <div><h4 className="text-stone-900 font-bold text-lg">Contacto</h4><p className="text-stone-800 text-2xl font-bold">{BUSINESS_INFO.phone}</p></div>
               </div>
             </div>
           </div>
-          <div className="lg:col-span-7 h-[500px] rounded-[3rem] overflow-hidden border-8 border-stone-50 shadow-xl relative group">
+          <div className="lg:col-span-7 h-[500px] rounded-[3rem] overflow-hidden border-8 border-white shadow-xl relative group">
             <a href={BUSINESS_INFO.googleMapsUrl} target="_blank" rel="noreferrer" className="block w-full h-full relative">
               <img src={MAP_SOURCE} alt="Mapa FB HUB" className="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 transition-all" />
               <div className="absolute inset-0 flex items-center justify-center bg-stone-900/10">
