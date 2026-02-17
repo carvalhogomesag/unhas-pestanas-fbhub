@@ -17,7 +17,7 @@ export const BUSINESS_INFO = {
   city: '2715-645 Montelavar',
   openingHours: 'Segunda a Sábado: 09:00 - 19:00',
   bookingUrl: 'https://wa.me/351912413847', 
-  googleMapsUrl: 'https://maps.app.goo.gl/VM8G+78',
+  googleMapsUrl: 'https://maps.app.goo.gl/h5kqFvuqEUGLKe9G6',
   instagramUrl: 'https://instagram.com/rosicangueiro' // Ajuste se for diferente
 };
 
